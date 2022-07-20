@@ -1,3 +1,22 @@
+
+/* HEADINGS */
+.big-heading {
+    color: blue
+}
+
+h1, h2 {
+    font-family: "Montserrat";
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+h1 {
+    font-weight: 900;
+}
+h2 {
+    font-weight: 650;
+}
+
 body {
     font-family: "Montserrat";
 }
@@ -7,24 +26,49 @@ body {
     color: #fff
 }
 
-.container-fluid {
-    padding: 3% 15%
+.title-image {
+    width: 18%;
+    transform: rotate(25deg);
+    position:absolute;
+    right: 30%
 }
 
-h1 {
+@media (max-width: 1107px) {
+    .title-image {
+        position: absolute;
+        right: 150px;
+        width: 30%;
+        top: 170px
+    }
+    
+
+}
+
+@media (max-width: 992px) {
+    .title-image {
+        position: relative;
+        width: 55%;
+        top: 120px;
+        left: 130px
+    }
+}
+
+.container-fluid {
+    padding: 3% 15% 7%
+}
+
+
+
+.bottom-text {
     font-family: "Montserrat", sans-serif;
     font-weight: 900;
     font-size: 3rem;
     line-height: 1.5;
+    color: white;
+    padding: 0 15%
 }
 
-h2 {
-    font-family: "Montserrat";
-    font-size: 3rem;
-    line-height: 1.5;
-    font-weight: bold;
-}
-
+ /* NAVBAR */
 .navbar-brand {
     font-family: "Ubuntu";
     font-size: 2.5rem;
@@ -45,30 +89,17 @@ h2 {
     font-weight: 400;
 }
 
-/* Download Buttons */
+
+/* DOWNLOAD BTNS */
 .download-btn {
     margin: 5% 3% 5% 0
 }
 
-/* Title Image */
-.title-image {
-    width: 50%
-}
-
-.rotated {
-    transform: rotate(25deg);
-}
-
-.features-row {
-    padding: 130px
-}
-
-.icon {
-    color: #ef8172;
-    font-size: 50px;
-}
-.icon:hover {
-    color: #ff4c68;
+#features {
+    padding: 7% 15%;
+    background: #fff;
+    position:relative;
+    z-index: 1;
 }
 
 .features-title {
@@ -84,6 +115,19 @@ h2 {
     margin: 0px 40px
 }
 
+.features-row {
+    padding: 130px
+}
+
+.icon {
+    color: #ef8172;
+    font-size: 50px;
+}
+.icon:hover {
+    color: #ff4c68;
+}
+
+/* CAROUSEL COMPONENTS */
 #testimonials {
     text-align: center;
     color: white;
@@ -97,6 +141,13 @@ h2 {
     margin: 20px;
 }
 
+.carousel-item {
+    height: 500px;
+    padding: 7% 15%;
+}
+
+
+/* PRESS */
 #press {
     background-color: #ef8172;
     text-align: center;
@@ -108,7 +159,23 @@ h2 {
     margin: 20px 20px 50px
 }
 
-.carousel-item {
-    height: 500px;
-    padding: 7% 15%;
+/* Pricing Section */
+#pricing {
+    padding: 100px;
+    text-align: center;
+}
+
+.pricing-column {
+    padding: 3% 2%
+}
+
+#cta {
+    text-align: center;
+    background-color: #ff4c68;
+    padding: 5% 15% 2%
+}
+
+.brand-spacing {
+    padding: .5%;
+    margin: 5% 0 1% 0
 }
